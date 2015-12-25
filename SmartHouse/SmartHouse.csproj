@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4986C628-6A94-4193-97D5-3D72D965CECA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartHouse</RootNamespace>
+    <AssemblyName>SmartHouse</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Content\Sass\.sass-cache\013d43e7fd7a15564964d179af0b210e555977df\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_console-settings.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_content.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_footer.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_grid.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_grids.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_header.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1520cc248997dedab337169c3c07a764eccaa84b\_menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\198981ad1af817c0853bf5f8b9b4026fe87737a2\_base.scssc" />
+    <Content Include="Content\Sass\.sass-cache\198981ad1af817c0853bf5f8b9b4026fe87737a2\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\198981ad1af817c0853bf5f8b9b4026fe87737a2\_reset.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1c34efa04a87ae48d61ce4fe2156a769ba4ff9d8\_links.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1c34efa04a87ae48d61ce4fe2156a769ba4ff9d8\_lists.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1c34efa04a87ae48d61ce4fe2156a769ba4ff9d8\_text.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1c34efa04a87ae48d61ce4fe2156a769ba4ff9d8\_units.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1c34efa04a87ae48d61ce4fe2156a769ba4ff9d8\_vertical_rhythm.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1d22c5b1bc1df2088bebaef800e6547188f24111\base.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1d22c5b1bc1df2088bebaef800e6547188f24111\ie.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1d22c5b1bc1df2088bebaef800e6547188f24111\print.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1d22c5b1bc1df2088bebaef800e6547188f24111\screen.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1d22c5b1bc1df2088bebaef800e6547188f24111\style.scssc" />
+    <Content Include="Content\Sass\.sass-cache\1d22c5b1bc1df2088bebaef800e6547188f24111\style1.scssc" />
+    <Content Include="Content\Sass\.sass-cache\2033fe616751e7aa9333a4469abd28052e447488\_context.scssc" />
+    <Content Include="Content\Sass\.sass-cache\2033fe616751e7aa9333a4469abd28052e447488\_helpers.scssc" />
+    <Content Include="Content\Sass\.sass-cache\2033fe616751e7aa9333a4469abd28052e447488\_no-query.scssc" />
+    <Content Include="Content\Sass\.sass-cache\2033fe616751e7aa9333a4469abd28052e447488\_parsers.scssc" />
+    <Content Include="Content\Sass\.sass-cache\2033fe616751e7aa9333a4469abd28052e447488\_respond-to.scssc" />
+    <Content Include="Content\Sass\.sass-cache\2f6c03b2ca60a3801ca5327e1f7e563496ed150f\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_animation.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_appearance.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_background-clip.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_background-origin.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_background-size.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_border-radius.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_box-shadow.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_box-sizing.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_columns.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_deprecated-support.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_filter.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_flexbox.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_font-face.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_hyphenation.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_images.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_inline-block.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_opacity.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_regions.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_text-shadow.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_transform.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_transition.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3746710bfe7e0b2975954c3a0118ba047eb1860b\_user-interface.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3aa8e0230493eb6fd1c3680539c42b9bb329e1c6\_grid-background.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3aa8e0230493eb6fd1c3680539c42b9bb329e1c6\_sticky-footer.scssc" />
+    <Content Include="Content\Sass\.sass-cache\3aa8e0230493eb6fd1c3680539c42b9bb329e1c6\_stretching.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4174713f69253d6fe877a0bd2e1fc5b24e05f538\_alternating-rows-and-columns.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4174713f69253d6fe877a0bd2e1fc5b24e05f538\_borders.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4174713f69253d6fe877a0bd2e1fc5b24e05f538\_scaffolding.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_console-buttons.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_console-property.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_console-value.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_device-cooker.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_device-fridge.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_device-lamp.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_device-microwave.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_device-tv.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_device.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_header-buttons.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\4468ff3632768a0763e727adc07fdfd72e3855ea\_menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_content.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_footer.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_grids.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_header.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\453648d9a558e8b7917374c96e34334a4e6bc0fd\_menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\58b0854ee45b46579ec070dbdedaf9e0088c5fb9\_bullets.scssc" />
+    <Content Include="Content\Sass\.sass-cache\58b0854ee45b46579ec070dbdedaf9e0088c5fb9\_horizontal-list.scssc" />
+    <Content Include="Content\Sass\.sass-cache\58b0854ee45b46579ec070dbdedaf9e0088c5fb9\_inline-block-list.scssc" />
+    <Content Include="Content\Sass\.sass-cache\58b0854ee45b46579ec070dbdedaf9e0088c5fb9\_inline-list.scssc" />
+    <Content Include="Content\Sass\.sass-cache\595fac6b687c9031debfb4ea4c8b3511cc17aba3\_clearfix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\595fac6b687c9031debfb4ea4c8b3511cc17aba3\_float.scssc" />
+    <Content Include="Content\Sass\.sass-cache\595fac6b687c9031debfb4ea4c8b3511cc17aba3\_hacks.scssc" />
+    <Content Include="Content\Sass\.sass-cache\595fac6b687c9031debfb4ea4c8b3511cc17aba3\_min.scssc" />
+    <Content Include="Content\Sass\.sass-cache\595fac6b687c9031debfb4ea4c8b3511cc17aba3\_reset.scssc" />
+    <Content Include="Content\Sass\.sass-cache\595fac6b687c9031debfb4ea4c8b3511cc17aba3\_tag-cloud.scssc" />
+    <Content Include="Content\Sass\.sass-cache\5a8d6b5a67e237e3a137afbc4b95918b07c08669\_float.scssc" />
+    <Content Include="Content\Sass\.sass-cache\5a8d6b5a67e237e3a137afbc4b95918b07c08669\_shared.scssc" />
+    <Content Include="Content\Sass\.sass-cache\5a8d6b5a67e237e3a137afbc4b95918b07c08669\_support.scssc" />
+    <Content Include="Content\Sass\.sass-cache\60800c991b521f859e6a7ede41503b47f26cd3e7\_brightness.scssc" />
+    <Content Include="Content\Sass\.sass-cache\60800c991b521f859e6a7ede41503b47f26cd3e7\_contrast.scssc" />
+    <Content Include="Content\Sass\.sass-cache\639a9515d036f73d9e63eda999f9da7fb53b2532\_background.scssc" />
+    <Content Include="Content\Sass\.sass-cache\639a9515d036f73d9e63eda999f9da7fb53b2532\_box-sizing.scssc" />
+    <Content Include="Content\Sass\.sass-cache\639a9515d036f73d9e63eda999f9da7fb53b2532\_clearfix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\639a9515d036f73d9e63eda999f9da7fb53b2532\_prefix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\639a9515d036f73d9e63eda999f9da7fb53b2532\_rem.scssc" />
+    <Content Include="Content\Sass\.sass-cache\639a9515d036f73d9e63eda999f9da7fb53b2532\_support.scssc" />
+    <Content Include="Content\Sass\.sass-cache\6727f00510b17093d47b18e9dfaee30755c6f2a0\_clearfix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\6727f00510b17093d47b18e9dfaee30755c6f2a0\_colors.scssc" />
+    <Content Include="Content\Sass\.sass-cache\6727f00510b17093d47b18e9dfaee30755c6f2a0\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\6727f00510b17093d47b18e9dfaee30755c6f2a0\_mixins.scssc" />
+    <Content Include="Content\Sass\.sass-cache\6727f00510b17093d47b18e9dfaee30755c6f2a0\_sizes.scssc" />
+    <Content Include="Content\Sass\.sass-cache\6884333f742b5cd4135bc22a56696f1914c694e1\_breakpoint.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7275f34405a13b76e00171051bfa38cb576e93a8\_base.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7275f34405a13b76e00171051bfa38cb576e93a8\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7275f34405a13b76e00171051bfa38cb576e93a8\_reset.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\breakpoint-2.5.0\stylesheets\_breakpoint.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\css3\_background-size.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\css3\_images.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\css3\_inline-block.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\typography\lists\_bullets.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\typography\lists\_horizontal-list.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\typography\text\_replacement.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\typography\_links.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\typography\_lists.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\typography\_text.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\utilities\general\_clearfix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\utilities\general\_float.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\utilities\general\_hacks.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\utilities\general\_reset.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\_css3.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\C%25058\Ruby22-x64\lib\ruby\gems\2.2.0\gems\compass-core-1.0.3\stylesheets\compass\_support.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\base\_base.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_console-settings.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_content.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_footer.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_grids.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_header.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\layout\_menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_button-console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_button-menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_console-buttons.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_console-property.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_console-value.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_device-cooker.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_device-fridge.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_device-lamp.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_device-microwave.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_device-tv.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_device.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_property-console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\modules\_value-console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\states\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\utilites\_clearfix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\utilites\_colors.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\utilites\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\utilites\_mixins.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\utilites\_sizes.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SH_MVC_Entity\SH_MVC_Entity\Content\Sass\sass\vendors\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SmartHouse\SmartHouse\Content\Sass\sass\modules\_device.scssc" />
+    <Content Include="Content\Sass\.sass-cache\75fcaf1b4852ceb732871195e41567cc2a7d8997\E%25058\CSharp\program\SmartHouse\SmartHouse\Content\Sass\sass\utilites\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_button-console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_button-menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_console-buttons.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_console-property.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_console-value.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_device-cooker.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_device-fridge.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_device-lamp.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_device-microwave.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_device-tv.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_device.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_header-buttons.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_menu.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_property-console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\77c46638c270e267774dccd121826b4beb146144\_value-console.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7887b8ac8d09efebbbc12b2a53b7170191837432\_grid.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7887b8ac8d09efebbbc12b2a53b7170191837432\_settings.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7887b8ac8d09efebbbc12b2a53b7170191837432\_utilities.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7887b8ac8d09efebbbc12b2a53b7170191837432\_validation.scssc" />
+    <Content Include="Content\Sass\.sass-cache\79db1df0af0471c2664c612e8a6fdc3832f23fae\_hover-link.scssc" />
+    <Content Include="Content\Sass\.sass-cache\79db1df0af0471c2664c612e8a6fdc3832f23fae\_link-colors.scssc" />
+    <Content Include="Content\Sass\.sass-cache\79db1df0af0471c2664c612e8a6fdc3832f23fae\_unstyled-link.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7a73c61e315c43fbacfc82745932f8f95522a9e5\_susy.scssc" />
+    <Content Include="Content\Sass\.sass-cache\7ca993ec672841a0def9101e1420c474041c0325\_su.scssc" />
+    <Content Include="Content\Sass\.sass-cache\86be6aa1f30f30642ccb60794bc1deffd5e33c15\_clearfix.scssc" />
+    <Content Include="Content\Sass\.sass-cache\86be6aa1f30f30642ccb60794bc1deffd5e33c15\_colors.scssc" />
+    <Content Include="Content\Sass\.sass-cache\86be6aa1f30f30642ccb60794bc1deffd5e33c15\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\86be6aa1f30f30642ccb60794bc1deffd5e33c15\_mixins.scssc" />
+    <Content Include="Content\Sass\.sass-cache\86be6aa1f30f30642ccb60794bc1deffd5e33c15\_sizes.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8af2d2f1f3bd079440c8266f56aec305c662028e\_container.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8af2d2f1f3bd079440c8266f56aec305c662028e\_end.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8af2d2f1f3bd079440c8266f56aec305c662028e\_isolate.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8af2d2f1f3bd079440c8266f56aec305c662028e\_span.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8f94eb898a9783786c406a84806e4fc94c68aa1c\_ellipsis.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8f94eb898a9783786c406a84806e4fc94c68aa1c\_force-wrap.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8f94eb898a9783786c406a84806e4fc94c68aa1c\_nowrap.scssc" />
+    <Content Include="Content\Sass\.sass-cache\8f94eb898a9783786c406a84806e4fc94c68aa1c\_replacement.scssc" />
+    <Content Include="Content\Sass\.sass-cache\9038148967885d4cb7c45a2d1d8976b05376ce07\_default.scssc" />
+    <Content Include="Content\Sass\.sass-cache\9215a7687358bccb2f3101e082fca1d4b689a493\_double.scssc" />
+    <Content Include="Content\Sass\.sass-cache\9215a7687358bccb2f3101e082fca1d4b689a493\_query.scssc" />
+    <Content Include="Content\Sass\.sass-cache\9215a7687358bccb2f3101e082fca1d4b689a493\_resolution.scssc" />
+    <Content Include="Content\Sass\.sass-cache\9215a7687358bccb2f3101e082fca1d4b689a493\_single.scssc" />
+    <Content Include="Content\Sass\.sass-cache\9215a7687358bccb2f3101e082fca1d4b689a493\_triple.scssc" />
+    <Content Include="Content\Sass\.sass-cache\a326f1b934c89ed4cb7c3aeadb38eef38c19599e\_susy.scssc" />
+    <Content Include="Content\Sass\.sass-cache\a87fd93a5df94734b6d4df52a667ebdbf60a88d0\_color.scssc" />
+    <Content Include="Content\Sass\.sass-cache\a87fd93a5df94734b6d4df52a667ebdbf60a88d0\_general.scssc" />
+    <Content Include="Content\Sass\.sass-cache\a87fd93a5df94734b6d4df52a667ebdbf60a88d0\_sprites.scssc" />
+    <Content Include="Content\Sass\.sass-cache\a87fd93a5df94734b6d4df52a667ebdbf60a88d0\_tables.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b4dc5ef3282a087fe58bacd7d9b56433752b3ac9\_css3.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b4dc5ef3282a087fe58bacd7d9b56433752b3ac9\_layout.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b4dc5ef3282a087fe58bacd7d9b56433752b3ac9\_reset.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b4dc5ef3282a087fe58bacd7d9b56433752b3ac9\_support.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b4dc5ef3282a087fe58bacd7d9b56433752b3ac9\_typography.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b4dc5ef3282a087fe58bacd7d9b56433752b3ac9\_utilities.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b62af93136d2b1d7ebafde2c37bc9bec491d0c61\_device.scssc" />
+    <Content Include="Content\Sass\.sass-cache\b7b6c9633194e12ecc21f8d3b6f62dae7e9649a2\_compass.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_background.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_container.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_direction.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_inspect.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_margins.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_output.scssc" />
+    <Content Include="Content\Sass\.sass-cache\bbe2b4e21b531d5a19abf154bd3db6f3c39420eb\_padding.scssc" />
+    <Content Include="Content\Sass\.sass-cache\c1222686d36c7f2473e70b5de9183a9bd5aa28f9\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\c23f348f30ae229d9f1c92da32cb5b0fad2f5311\style.scssc" />
+    <Content Include="Content\Sass\.sass-cache\e1b148f4b0f22cf78f546cc96318d75ae0d539f6\_default-pair.scssc" />
+    <Content Include="Content\Sass\.sass-cache\e1b148f4b0f22cf78f546cc96318d75ae0d539f6\_default.scssc" />
+    <Content Include="Content\Sass\.sass-cache\e1b148f4b0f22cf78f546cc96318d75ae0d539f6\_double-string.scssc" />
+    <Content Include="Content\Sass\.sass-cache\ecfb55e93fb961e8b70459f1600f35d147b6e747\_base.scssc" />
+    <Content Include="Content\Sass\.sass-cache\ecfb55e93fb961e8b70459f1600f35d147b6e747\_sprite-img.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_background.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_bleed.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_box-sizing.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_breakpoint-plugin.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_container.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_context.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_gallery.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_grids.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_gutters.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_isolate.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_margins.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_padding.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_rows.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_settings.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_span.scssc" />
+    <Content Include="Content\Sass\.sass-cache\eda507e26d71d82cfe5bbaebe2690d2fb11978b8\_validation.scssc" />
+    <Content Include="Content\Sass\.sass-cache\efe4e348956af92af97e92fe14d4a596984e5fd2\_index.scssc" />
+    <Content Include="Content\Sass\.sass-cache\f14b7b9f9d5f92df533304fb01472d8e020f4360\_resolution.scssc" />
+    <Content Include="Content\Sass\.sass-cache\f20dab5b7fb1216f35d8484ebb92bc8dca57139a\_utilities.scssc" />
+    <Content Include="Content\Sass\.sass-cache\ff877fff6f843eb0a825a9ec9036dd3df8815093\_default.scssc" />
+    <Content Include="Content\Sass\1_config.rb" />
+    <Content Include="Content\Sass\sass\base\_base.scss" />
+    <Content Include="Content\Sass\sass\base\_index.scss" />
+    <Content Include="Content\Sass\sass\base\_reset.scss" />
+    <Content Include="Content\Sass\sass\layout\_console.scss" />
+    <Content Include="Content\Sass\sass\layout\_content.scss" />
+    <Content Include="Content\Sass\sass\layout\_footer.scss" />
+    <Content Include="Content\Sass\sass\layout\_grids.scss" />
+    <Content Include="Content\Sass\sass\layout\_header.scss" />
+    <Content Include="Content\Sass\sass\layout\_index.scss" />
+    <Content Include="Content\Sass\sass\layout\_menu.scss" />
+    <Content Include="Content\Sass\sass\modules\_console-buttons.scss" />
+    <Content Include="Content\Sass\sass\modules\_console-property.scss" />
+    <Content Include="Content\Sass\sass\modules\_console-value.scss" />
+    <Content Include="Content\Sass\sass\modules\_device-cooker.scss" />
+    <Content Include="Content\Sass\sass\modules\_device-fridge.scss" />
+    <Content Include="Content\Sass\sass\modules\_device-lamp.scss" />
+    <Content Include="Content\Sass\sass\modules\_device-microwave.scss" />
+    <Content Include="Content\Sass\sass\modules\_device-tv.scss" />
+    <Content Include="Content\Sass\sass\modules\_device.scss" />
+    <Content Include="Content\Sass\sass\modules\_header-buttons.scss" />
+    <Content Include="Content\Sass\sass\modules\_index.scss" />
+    <Content Include="Content\Sass\sass\modules\_menu.scss" />
+    <Content Include="Content\Sass\sass\states\_index.scss" />
+    <Content Include="Content\Sass\sass\style.scss" />
+    <Content Include="Content\Sass\sass\utilites\_clearfix.scss" />
+    <Content Include="Content\Sass\sass\utilites\_colors.scss" />
+    <Content Include="Content\Sass\sass\utilites\_index.scss" />
+    <Content Include="Content\Sass\sass\utilites\_mixins.scss" />
+    <Content Include="Content\Sass\sass\utilites\_sizes.scss" />
+    <Content Include="Content\Sass\sass\vendors\_index.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Sass\css\style.css" />
+    <Content Include="Content\Sass\images\100-main.png" />
+    <Content Include="Content\Sass\images\100-settings-control.png" />
+    <Content Include="Content\Sass\images\52-1.png" />
+    <Content Include="Content\Sass\images\62-1.png" />
+    <Content Include="Content\Sass\images\console-device.jpg" />
+    <Content Include="Content\Sass\images\console-selected-device.png" />
+    <Content Include="Content\Sass\images\console-settings.jpg" />
+    <Content Include="Content\Sass\images\cooker.png" />
+    <Content Include="Content\Sass\images\fridge-bg.png" />
+    <Content Include="Content\Sass\images\header-menu-api.jpg" />
+    <Content Include="Content\Sass\images\header-menu.jpg" />
+    <Content Include="Content\Sass\images\lamp.png" />
+    <Content Include="Content\Sass\images\lamp_bg.png" />
+    <Content Include="Content\Sass\images\logo-64-1.png" />
+    <Content Include="Content\Sass\images\logo.jpg" />
+    <Content Include="Content\Sass\images\menu-82-1.png" />
+    <Content Include="Content\Sass\images\menu-82-2.png" />
+    <Content Include="Content\Sass\images\menu-82-3.png" />
+    <Content Include="Content\Sass\images\menu-82-4.png" />
+    <Content Include="Content\Sass\images\menu-82-5.png" />
+    <Content Include="Content\Sass\images\menu-cooker.png" />
+    <Content Include="Content\Sass\images\menu-fridge.png" />
+    <Content Include="Content\Sass\images\menu-lamp.png" />
+    <Content Include="Content\Sass\images\menu-microwave.png" />
+    <Content Include="Content\Sass\images\menu-settings.png" />
+    <Content Include="Content\Sass\images\menu-tv.png" />
+    <Content Include="Content\Sass\images\microwave.png" />
+    <Content Include="Content\Sass\images\microwave_grill.png" />
+    <Content Include="Content\Sass\images\microwave_wave.png" />
+    <Content Include="Content\Sass\images\property-bg-bottom-left.png" />
+    <Content Include="Content\Sass\images\property-bg-bottom-right.png" />
+    <Content Include="Content\Sass\images\property-bg-top-left.png" />
+    <Content Include="Content\Sass\images\property-bg-top-right.png" />
+    <Content Include="Content\Sass\images\settings-74-1.png" />
+    <Content Include="Content\Sass\images\TV.png" />
+    <Content Include="Content\Sass\images\value-bg-bottom-left.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DdAccess\DataBaseContext.cs" />
+    <Compile Include="DdAccess\DataBaseInitializer.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DevicePropState\Channels.cs" />
+    <Compile Include="Models\Cooker.cs" />
+    <Compile Include="Models\Device.cs" />
+    <Compile Include="Models\DeviceConsole.cs" />
+    <Compile Include="Models\DeviceDrawe\AspDrawe.cs" />
+    <Compile Include="Models\DeviceSettings\CookerSettings.cs" />
+    <Compile Include="Models\DeviceSettings\FridgeSettings.cs" />
+    <Compile Include="Models\DeviceSettings\LampSettings.cs" />
+    <Compile Include="Models\DeviceSettings\MicrowaveSettings.cs" />
+    <Compile Include="Models\DeviceSettings\TvSettings.cs" />
+    <Compile Include="Models\Fridge.cs" />
+    <Compile Include="Models\DevicePropState\GrillState.cs" />
+    <Compile Include="Models\Interfaces\IDrawe.cs" />
+    <Compile Include="Models\Interfaces\ISettings.cs" />
+    <Compile Include="Models\Lamp.cs" />
+    <Compile Include="Models\Microwave.cs" />
+    <Compile Include="Models\Tv.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Sass\javascripts\" />
+    <Folder Include="Content\Sass\sass\states\abstract\" />
+    <Folder Include="Content\Sass\sass\states\modules\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1792</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1792/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

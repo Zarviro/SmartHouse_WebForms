@@ -36,7 +36,7 @@ namespace SmartHouse
                 console.Visible = false;
             }
             InitDevicePanel();
-        }
+        } 
 
 
         // Create

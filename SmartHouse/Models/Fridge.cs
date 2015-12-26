@@ -5,8 +5,8 @@ using System.Linq;
 using System.Web;
 using SmartHouse.Models.Interfaces;
 using System.Web.UI;
-using SmartHouse.Models.DeviceDrawe;
 using System.Web.UI.WebControls;
+using SmartHouse.DeviceDrawe;
 
 namespace SmartHouse.Models
 {
@@ -114,7 +114,7 @@ namespace SmartHouse.Models
         // IDrawe
         public Control Drawe()
         {
-            return AspDrawe.Fridge(this); ;
+            return FridgeAsp.Drave(this);
         }
 
         // ISettings

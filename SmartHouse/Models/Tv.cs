@@ -1,4 +1,4 @@
-﻿using SmartHouse.Models.DeviceDrawe;
+﻿using SmartHouse.DeviceDrawe;
 using SmartHouse.Models.DevicePropState;
 using SmartHouse.Models.DeviceSettings;
 using SmartHouse.Models.Interfaces;
@@ -84,7 +84,7 @@ namespace SmartHouse.Models
         // IDrawe
         public Control Drawe()
         {
-            return AspDrawe.Tv(this);
+            return TvAsp.Drawe(this);
         }
 
 
